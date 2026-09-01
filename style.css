@@ -1,0 +1,46 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
+    height: 60px;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.one{
+    font-size: 30px;
+}
+
+.header-button button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.button-one{
+    background-color: orange;
+    color: white;
+}
+
+.button-two{
+    background-color: transparent;
+}
+
