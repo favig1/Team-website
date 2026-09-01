@@ -1,0 +1,715 @@
+/* ================= GENERAL ================= */
+
+/* Remove default spacing from the browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fb;
+    color: #17365d;
+}
+
+/* Remove underline from links */
+a {
+    text-decoration: none;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    height: 64px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 9%;
+
+    justify-content: space-between;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    color: #c9802e;
+}
+
+
+/* Small logo circle */
+.logo-icon {
+    width: 32px;
+    height: 32px;
+
+    background-color: #d68932;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 5px;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #172f51;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d3832e;
+}
+
+
+/* Header buttons */
+.header-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+/* Post ad button */
+.post-ad {
+    background-color: #d7832e;
+
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* Login */
+.login {
+    color: #1b3151;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    height: 367px;
+
+    background-color: #273750;
+
+    text-align: center;
+
+    padding-top: 78px;
+
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Decorative circle */
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 250px;
+    height: 250px;
+
+    background-color: rgba(210, 130, 45, 0.12);
+
+    border-radius: 50%;
+
+    right: -50px;
+    top: -100px;
+}
+
+
+/* Hero heading */
+.hero h1 {
+    color: #223b63;
+
+    font-size: 44px;
+
+    margin-bottom: 20px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Hero paragraph */
+.hero p {
+    color: #9daac0;
+
+    font-size: 19px;
+
+    line-height: 1.5;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Search box */
+.search-box {
+    width: 600px;
+
+    height: 56px;
+
+    background-color: white;
+
+    border-radius: 30px;
+
+    margin: 27px auto;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 22px;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Search icon */
+.search-icon {
+    font-size: 30px;
+
+    color: #145eff;
+
+    margin-right: 15px;
+}
+
+
+/* Search input */
+.search-box input {
+    border: none;
+
+    outline: none;
+
+    width: 100%;
+
+    font-size: 15px;
+
+    color: #555;
+}
+
+
+/* ================= BRANDS ================= */
+
+.brands-section {
+    padding: 48px 9% 70px;
+}
+
+
+/* Brand heading */
+.brands-section h2 {
+    color: #17365d;
+
+    font-size: 21px;
+
+    margin-bottom: 26px;
+}
+
+
+/* Number of brands */
+.brands-section h2 span {
+    font-size: 14px;
+
+    color: #7b8ca4;
+
+    font-weight: normal;
+
+    margin-left: 8px;
+}
+
+
+/* Brand grid */
+.brand-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 24px;
+}
+
+
+/* Individual card */
+.brand-card {
+    height: 210px;
+
+    background-color: white;
+
+    border: 1px solid #e0e5eb;
+
+    border-radius: 17px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+/* Card hover */
+.brand-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Logo background */
+.brand-image {
+    width: 80px;
+    height: 80px;
+
+    background-color: #f0f4f8;
+
+    border-radius: 16px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+}
+
+
+/* Brand logo */
+.brand-image img {
+    width: 52px;
+    height: 52px;
+
+    object-fit: contain;
+}
+
+
+/* Brand name */
+.brand-card h3 {
+    color: #172f51;
+
+    font-size: 19px;
+
+    margin-bottom: 10px;
+}
+
+
+/* View models */
+.brand-card a {
+    color: #d88935;
+
+    font-size: 13px;
+
+    font-weight: 500;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #eef1f4;
+
+    color: #5f7797;
+}
+
+
+/* Footer top */
+.footer-top {
+    padding: 65px 9px 50px;
+
+    max-width: 1300px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1.4fr 0.8fr 1fr 1fr 1.3fr;
+
+    gap: 45px;
+}
+
+
+/* Footer logo */
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 28px;
+}
+
+
+/* Footer logo circle */
+.footer-logo-icon {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background-color: #d78932;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 12px;
+
+    font-size: 20px;
+}
+
+
+/* Footer logo name */
+.footer-logo strong {
+    display: block;
+
+    font-size: 21px;
+
+    color: #59616b;
+}
+
+
+/* Small text under logo */
+.footer-logo small {
+    display: block;
+
+    font-size: 9px;
+
+    color: #a3adbb;
+
+    letter-spacing: 1px;
+
+    margin-top: 4px;
+}
+
+
+/* About paragraph */
+.footer-about p {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+
+/* Footer column heading */
+.footer-column h3,
+.footer-links h3 {
+    color: #17365d;
+
+    font-size: 17px;
+
+    margin-bottom: 25px;
+}
+
+
+/* Footer links */
+.footer-column a {
+    display: block;
+
+    color: #607a9b;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+.footer-column a:hover,
+.footer-links a:hover {
+    color: #d7832e;
+}
+
+
+/* Newsletter heading */
+.newsletter-title {
+    margin-top: 42px;
+}
+
+
+/* Newsletter */
+.newsletter {
+    display: flex;
+
+    height: 44px;
+}
+
+
+/* Newsletter input */
+.newsletter input {
+    width: 260px;
+
+    border: none;
+
+    padding: 0 15px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+
+/* Newsletter button */
+.newsletter button {
+    width: 50px;
+
+    border: none;
+
+    background-color: #d7832e;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+
+/* ================= FOOTER LINKS ================= */
+
+.footer-links {
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 25px 9% 90px;
+
+    border-top: 1px solid #dce0e4;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1.2fr;
+
+    gap: 70px;
+}
+
+
+/* Link row */
+.links-row {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+
+/* Footer links */
+.footer-links a {
+    color: #607a9b;
+
+    font-size: 14px;
+}
+
+
+/* ================= BOTTOM FOOTER ================= */
+
+.footer-bottom {
+    border-top: 1px solid #dce0e4;
+
+    min-height: 90px;
+
+    padding: 0 9%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    font-size: 13px;
+}
+
+
+/* Social media */
+.social {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+
+.social a {
+    color: #607a9b;
+
+    font-weight: bold;
+}
+
+
+/* ================= BACK TO TOP ================= */
+
+.back-to-top {
+    position: fixed;
+
+    right: 30px;
+    bottom: 36px;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: #d7832e;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+
+    border-radius: 2px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 1000px) {
+
+    header {
+        padding: 0 4%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .brand-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* Phones */
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .header-buttons {
+        display: none;
+    }
+
+
+    .hero {
+        height: 350px;
+
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+
+    .brands-section {
+        padding: 40px 20px;
+    }
+
+
+    .brand-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .footer-top {
+        grid-template-columns: 1fr;
+
+        padding: 50px 25px;
+    }
+
+
+    .footer-links {
+        grid-template-columns: 1fr;
+
+        padding: 30px 25px;
+    }
+
+
+    .footer-bottom {
+        padding: 25px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+}
